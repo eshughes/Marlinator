@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marlinator.Business", "Marlinator.Business\Marlinator.Business.csproj", "{1D8A2E78-4BCB-40BF-8D26-83354C043155}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F9E775E8-9FF0-4446-8F54-8E2D9A497B17} = {F9E775E8-9FF0-4446-8F54-8E2D9A497B17}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marlinator.Data", "Marlinator.Data\Marlinator.Data.csproj", "{F9E775E8-9FF0-4446-8F54-8E2D9A497B17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marlinator", "Marlinator\Marlinator.csproj", "{454D3087-1B0D-49D4-ACD2-5C8ADA0B02EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D8A2E78-4BCB-40BF-8D26-83354C043155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8A2E78-4BCB-40BF-8D26-83354C043155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8A2E78-4BCB-40BF-8D26-83354C043155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8A2E78-4BCB-40BF-8D26-83354C043155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E775E8-9FF0-4446-8F54-8E2D9A497B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E775E8-9FF0-4446-8F54-8E2D9A497B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E775E8-9FF0-4446-8F54-8E2D9A497B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E775E8-9FF0-4446-8F54-8E2D9A497B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454D3087-1B0D-49D4-ACD2-5C8ADA0B02EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454D3087-1B0D-49D4-ACD2-5C8ADA0B02EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454D3087-1B0D-49D4-ACD2-5C8ADA0B02EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454D3087-1B0D-49D4-ACD2-5C8ADA0B02EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {182CA2DF-D143-4D81-9201-8852208D8CE7}
+	EndGlobalSection
+EndGlobal

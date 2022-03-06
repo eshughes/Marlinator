@@ -1,0 +1,27 @@
+﻿@model MarlCalculatorViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using (Html.BeginForm("MarlCalculator", "Home", FormMethod.Post))
+{
+    <div>
+        <p>Pick what yarn weights you would like to marl together</p>
+        <ul>
+            <li>@Html.LabelFor(model => model.Yarn1) @Html.DropDownListFor(model => model.Yarn1, Model.YarnWeightOptions, "--select--")<br /></li>
+            <li>@Html.LabelFor(model => model.Yarn2) @Html.DropDownListFor(model => model.Yarn2, Model.YarnWeightOptions, "--select--")<br /></li>
+            <li>@Html.LabelFor(model => model.Yarn3) @Html.DropDownListFor(model => model.Yarn3, Model.YarnWeightOptions, "--select--")<br /></li>
+        </ul>
+        <input id = "Submit" type = "submit" value = "submit" />
+        @if (Model.YarnWeightResults != null)
+        {
+            <p>Results:</p>
+            <ul>
+                @foreach (var yarnWeightResult in Model.YarnWeightResults)
+                {
+                    <li>@yarnWeightResult.FriendlyName</li>
+                }
+            </ul>
+        }
+    </div>
+}
